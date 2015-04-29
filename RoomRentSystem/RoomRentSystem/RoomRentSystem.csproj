@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EDA08E6C-AB9F-428B-902D-2EA281981FF8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RoomRentSystem</RootNamespace>
+    <AssemblyName>RoomRentSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\MySQL\MySQL Connector Net 6.9.6\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Billsinf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Billsinf.Designer.cs">
+      <DependentUpon>Billsinf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Currentuserpwdedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Currentuserpwdedit.Designer.cs">
+      <DependentUpon>Currentuserpwdedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MySqlHelper.cs" />
+    <Compile Include="Othersetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Othersetting.Designer.cs">
+      <DependentUpon>Othersetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rentinf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rentinf.Designer.cs">
+      <DependentUpon>Rentinf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Roominf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roominf.Designer.cs">
+      <DependentUpon>Roominf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Userinf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userinf.Designer.cs">
+      <DependentUpon>Userinf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managerinf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managerinf.Designer.cs">
+      <DependentUpon>Managerinf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Financeinf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Financeinf.Designer.cs">
+      <DependentUpon>Financeinf.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Billsinf.resx">
+      <DependentUpon>Billsinf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Currentuserpwdedit.resx">
+      <DependentUpon>Currentuserpwdedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Othersetting.resx">
+      <DependentUpon>Othersetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rentinf.resx">
+      <DependentUpon>Rentinf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roominf.resx">
+      <DependentUpon>Roominf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userinf.resx">
+      <DependentUpon>Userinf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managerinf.resx">
+      <DependentUpon>Managerinf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financeinf.resx">
+      <DependentUpon>Financeinf.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
